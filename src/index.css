@@ -10,6 +10,14 @@
   --lightBlue: #eeeeff;
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
+.App{
+  position: relative;
+  overflow-x: clip;
+}
+.App>:nth-child(1){
+  background: var(--black);
+  position: relative;
+}
 
 * {
   margin: 0;

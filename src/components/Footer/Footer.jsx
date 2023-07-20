@@ -17,7 +17,7 @@ const Footer = () => {
         {/* right*/}
         <div className="f-right flexColStart">
           <span className="primaryText">Information</span>
-          <span className="secondaryText">
+     <span className="secondaryText">
             Privacy Policy | Terms of Service
           </span>
           <div className="flexCenter f-menu">

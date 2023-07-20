@@ -16,7 +16,7 @@ const Contact = () => {
             We are always ready for your valuable feedback and suggestions.
           </span>
 
-          <div className="flexColStart contact-modes">
+          <div className="flexCenter contact-modes">
             {/* first row */}
             <div className="flexStart row">
               {/* first mode */}
@@ -35,7 +35,7 @@ const Contact = () => {
 
               {/* second mode */}
 
-              <div className="flexColCenter mode">
+              <div className="flexCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
                     <BsFillChatDotsFill size={25} />
@@ -85,9 +85,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="c-right">
+        <div className="c-right ">
           <div className="image-container">
-            <img src="./contact.jpg" alt="" />
+            <img src="./xdxd.jpg" alt="hello there" />
           </div>
         </div>
       </div>

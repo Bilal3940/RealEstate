@@ -8,13 +8,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
    color: var(--secondary);
+
+
   }
  
   .h-menu {
     gap: 2rem;
-    display: flex;
-    justify-content: space-between;
-    /* margin-top: 20px; */
   }
   
   .h-menu>*:hover {
@@ -22,3 +21,29 @@
     text-decoration: none;
     /* margin-right: 10px; */
   }
+
+  .menu-icon{
+    display: none;
+  }
+@media (max-width:768px) {
+  .menu-icon{
+    display: block;
+  }
+  .h-menu{  
+     
+     
+    z-index: 2; 
+    color: var(--black);
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background: white;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    align-items: flex-start;
+  }
+  
+}

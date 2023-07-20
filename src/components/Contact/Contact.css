@@ -4,18 +4,27 @@
 .contact-container>div{
     flex: 50%;
 }
+.image-container{
+    border: 8px solid rgba(99, 85, 85, 0.9);
+    width: 23rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+}
 
 .contact-modes{
     margin-top: 2rem;
-    gap: 1.5rem;
+    gap: 0.5rem;
 
 }
 .contact-modes .row{
-    gap:1rem;
+    gap:0.5rem;
+    display: block;
 }
 .mode{
     width: 14rem;
     padding: 1rem;
+    margin: 1rem;
     border: 0.8px solid rgb(128, 128, 0,0.143);
     border-radius: 5px;
     gap: 1rem;

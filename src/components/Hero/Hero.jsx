@@ -46,7 +46,7 @@ const Hero = () => {
                 </div>
                 </div>
             </div>
-            <div className="hero-right flexCenter">
+            <div className="hero-right ">
                 <div className="image-container">
                     <img src="./hero-image.png" alt="hero image" />
                 </div>

@@ -1,33 +1,40 @@
-.image-container {
-    width: 25rem;
-    height: 35rem;
+.v-container .image-container {
+    border: 8px solid rgba(126, 122, 122, 0.9);
+    width: 23rem;
+    /* height: 35rem; */
     display: flex;
     overflow: hidden;
     border-radius: 15rem 15rem 0 0;
-    border: 8px solid rgb(157, 143, 143);
-  }
-.v-container>div{
-    flex:1;
 }
-.v-right{
+
+.v-container>div {
+    flex: 1;
+}
+
+.v-right {
     gap: 0.5rem;
 }
-.accordian{
+
+
+.accordian {
     margin-top: 2rem;
     border: none;
 }
-.accordianItem{
+
+.accordianItem {
     background: white;
-    border: 0.8px solid rgb(128, 128, 0,0.143);
+    border: 0.8px solid rgb(128, 128, 0, 0.143);
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 20px;
 }
-.accordianItem.expanded{
+
+.accordianItem.expanded {
     box-shadow: var(--shadow);
-    border-radius: 6px ;
+    border-radius: 6px;
 }
-.accordian-button{
+
+.accordian-button {
     justify-content: space-between;
     background: white;
     cursor: pointer;
@@ -35,14 +42,17 @@
     width: 100%;
 
 }
+
 .accordian-button .primaryText {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
-.icon{
+
+.icon {
     padding: 10px;
     background: #eeeeff;
     border-radius: 5px;
 }
-.icon>svg{
+
+.icon>svg {
     fill: var(--blue);
 }
