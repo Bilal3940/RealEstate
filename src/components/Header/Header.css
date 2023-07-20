@@ -1,0 +1,24 @@
+.h-wrapper {
+    background:var(--black);
+    color: #fff;
+  }
+  
+  .h-container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   color: var(--secondary);
+  }
+ 
+  .h-menu {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+  }
+  
+  .h-menu>*:hover {
+    cursor: pointer;
+    text-decoration: none;
+    /* margin-right: 10px; */
+  }

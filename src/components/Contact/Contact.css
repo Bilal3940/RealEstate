@@ -1,0 +1,48 @@
+.contact-container{
+    justify-content: space-between;
+}
+.contact-container>div{
+    flex: 50%;
+}
+
+.contact-modes{
+    margin-top: 2rem;
+    gap: 1.5rem;
+
+}
+.contact-modes .row{
+    gap:1rem;
+}
+.mode{
+    width: 14rem;
+    padding: 1rem;
+    border: 0.8px solid rgb(128, 128, 0,0.143);
+    border-radius: 5px;
+    gap: 1rem;
+    transition: all 300ms ease-in;
+}
+.mode .button{
+    width: 100%;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.mode .button:hover{
+    background-color: var(--blue);
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+.mode>:nth-child(1){
+    width: 100%;
+    gap: 1.5rem;
+
+}
+.mode .details .primaryText{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
