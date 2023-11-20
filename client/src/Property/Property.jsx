@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useMutation, useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
-import {getAllBookingsByUser } from "../utils/api";
+import {favorites, getAllBookingsByUser } from "../utils/api";
 import useProperty from "../../hooks/useProperty";
 import { PuffLoader } from "react-spinners";
 import { AiFillHeart, AiTwotoneCar } from "react-icons/ai";
@@ -30,7 +30,7 @@ const Property = () => {
   
   const handleClick = () => {
     setIsClicked(!isClicked);
-    console.log("hello")
+    mutate();
   };
 
   const {
@@ -38,21 +38,14 @@ const Property = () => {
     setuserDetails,
   } = useContext(UserDetailContext);
 
-  const {mutate} =useMutation({
-    mutationFn:()=>getAllBookingsByUser(user?.email), // Implement this function
-    onSuccess:(response)=>setDetails(response),
-    onError:(response)=>toast.error("Error fetching bookings:", response),
-    });
-    useEffect(()=>{
-      mutate()
-  
-    },[])
-    const setDetails = (response) => {
-      setuserDetails({
-      bookings: response.data.bookedVisits,
-    }); 
+  // function to add properties to fav using id
+    const {mutate} =useMutation({
+      mutationFn:() => favorites(id,user?.email, token),
+      onSuccess: (response) => {
+          console.log(response)
+              },
+              });
 
-  }
 
   if (isError) {
     return <div className="flexCenter paddings">Error while fetching data</div>;

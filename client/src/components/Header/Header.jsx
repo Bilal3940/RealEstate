@@ -37,7 +37,7 @@ const Header = () => {
                 Login
               </button>
               :
-              <ProfileMenu user={user} logout = {logout} />
+              <ProfileMenu  user={user} logout = {logout} />
             }
           </div>
         </OutsideClickHandler>
