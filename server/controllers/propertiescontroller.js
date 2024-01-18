@@ -14,7 +14,7 @@ export const registerProperties = asyncHandler(async (req, res) => {
     UserEmail,
   } = req.body.data;
   try {
-    const property = await prisma.Properties.create({
+    const property = await prisma.properties.create({
       data: {
         title,
         description,
@@ -37,8 +37,9 @@ export const registerProperties = asyncHandler(async (req, res) => {
 });
 
 export const GetAllProperties = asyncHandler(async(req,res)=>{
+  console.log("I am innnnn")
     try {
-        const properties = await prisma.Properties.findMany({
+        const properties = await prisma.properties.findMany({
             orderBy:{
                 createdAt:"desc",
             },
@@ -47,13 +48,14 @@ export const GetAllProperties = asyncHandler(async(req,res)=>{
 
     } catch (error) {
         res.send(error.message)
+        console.log(error.message)
     }
 })
 
 export const getProperty = asyncHandler(async(req, res)=>{
   const {id} = req.params
     try {
-      const property = await prisma.Properties.findUnique({where:{id}})
+      const property = await prisma.properties.findUnique({where:{id}})
       res.send(property)
       
     } catch (error) {
